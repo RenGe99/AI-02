@@ -63,9 +63,11 @@ print(training_labels[0]) # 列印第一個訓練標籤
 
 print(training_images[0]) # 列印第一個訓練圖像的像素數據
 
+<img width="1236" height="885" alt="Image" src="https://github.com/user-attachments/assets/5c38e131-e316-4606-85de-dd2a62604962" />
 
 ## Step 3. 數據正規化
 數據正規化：將圖像數據的像素值縮放到 0 到 1 之間，可以幫助模型更快更好地學習。
+
 
 
 ## Step 4. 定義模型結構
