@@ -68,21 +68,40 @@ print(training_images[0]) # 列印第一個訓練圖像的像素數據
 ## Step 3. 數據正規化
 數據正規化：將圖像數據的像素值縮放到 0 到 1 之間，可以幫助模型更快更好地學習。
 
+<img width="495" height="55" alt="Image" src="https://github.com/user-attachments/assets/dc154ccd-96a1-403d-aa54-69c5b8848b14" />
 
 
 ## Step 4. 定義模型結構
 設計神經網路結構：使用 Sequential 模型來堆疊層(Layer)。首先是平坦層(Flatten Layer)將二維圖像轉換為一維陣列圖像數據，然後是兩個密集層(Dense Layer)進行特徵學習和分類。
 
+<img width="1597" height="134" alt="Image" src="https://github.com/user-attachments/assets/833d5aec-3c8b-4033-a891-46875d89ba19" />
 
 ## Step 5. 模型編譯與訓練
 編譯模型：在訓練之前，需要編譯模型，設置優化器、損失函數和評估指標。本篇文章將使用 Adam 優化器， sparse_categorical_crossentropy 作為損失函數，並追踪其準確率來做為評估指標。
 
+<img width="491" height="67" alt="Image" src="https://github.com/user-attachments/assets/4e3d8f12-5109-4703-830f-ca5b3b9e29bc" />
 
 ## 訓練模型：使用 fit 方法來訓練模型，並且使用前面準備的圖像訓練數據來訓練模型，過程中模型將學習如何將輸入的訓練圖像映射到輸出類別，這就是監督式學習的基本概念。這裡設定迭代 5 個訓練週期，讀者可以根據自己需求調整訓練週期並觀察模型訓練效果。****
 
+<img width="642" height="196" alt="Image" src="https://github.com/user-attachments/assets/15ad22ac-95ac-42d2-90d7-4b453e6d55dd" />
+
+## Step 6. 模型儲存與載入
+## 備註：本步驟提供有需要練習儲存模型的讀者參考，若不需要則可以考慮跳至下一個步驟，不會影響本專案學習。
+
+### 儲存模型：訓練完成後，我們可以將模型儲存起來，以便未來使用或進行進一步的分析。
+
+
+### 載入模型：若要使用這個儲存的模型時，可以使用下列程式碼載入之前儲存的模型來使用。
+
+
+## Step 7. 模型評估與優化
+## 評估模型性能：使用測試數據集來評估模型的準確度，以了解模型在處理未見過的數據時的表現。下面程式碼將輸出模型在測試集上的準確度，讓我們能夠評估其泛化能力(Generalization)。
 
 
 
+## 測試損失表示模型在測試數據上的平均損失值，測試準確率則表示模型正確預測標籤的比例。
+
+## 性能優化：可以根據模型的表現，來調整模型結構（如增加層數、改變神經元數量）或調整學習參數（如學習率、批次大小），進行再次訓練和評估，以達到更好的性能。
 
 
 
