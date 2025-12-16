@@ -58,7 +58,7 @@ print(training_labels[0]) # 列印第一個訓練標籤
 
 輸出類別 9 即為 Ankle boot，其他類別可參考下表。
 
-
+<img width="295" height="623" alt="Image" src="https://github.com/user-attachments/assets/6afafa66-9ca1-4a75-87fd-ce9cda0714a8" />
 
 
 print(training_images[0]) # 列印第一個訓練圖像的像素數據
