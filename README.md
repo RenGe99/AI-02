@@ -90,23 +90,31 @@ print(training_images[0]) # 列印第一個訓練圖像的像素數據
 
 ### 儲存模型：訓練完成後，我們可以將模型儲存起來，以便未來使用或進行進一步的分析。
 
+<img width="1626" height="58" alt="Image" src="https://github.com/user-attachments/assets/5647e196-e080-47c0-a363-4dceaa288b0f" />
+
 
 ### 載入模型：若要使用這個儲存的模型時，可以使用下列程式碼載入之前儲存的模型來使用。
+
+<img width="1056" height="50" alt="Image" src="https://github.com/user-attachments/assets/2859fd4f-8a63-45a2-99a8-9e957c8e2945" />
 
 
 ## Step 7. 模型評估與優化
 ## 評估模型性能：使用測試數據集來評估模型的準確度，以了解模型在處理未見過的數據時的表現。下面程式碼將輸出模型在測試集上的準確度，讓我們能夠評估其泛化能力(Generalization)。
 
-
+<img width="768" height="122" alt="Image" src="https://github.com/user-attachments/assets/f1b629be-1020-4e8f-9ae5-17487d5eae14" />
 
 ## 測試損失表示模型在測試數據上的平均損失值，測試準確率則表示模型正確預測標籤的比例。
 
 ## 性能優化：可以根據模型的表現，來調整模型結構（如增加層數、改變神經元數量）或調整學習參數（如學習率、批次大小），進行再次訓練和評估，以達到更好的性能。
 
+</h2>
 
+## Step 8. 檢視模型架構
+## 備註：本步驟提供想了解神經網路結構的讀者參考，若不需要則可以暫時忽略此步驟，不會影響本專案學習。
 
+### 檢視模型架構：若想要顯示模型的摘要資訊，可執行下面程式碼，將會顯示包括每層的名稱、輸出形狀和參數數量，對於理解模型的構造和複雜度非常有幫助。
 
-
+<img width="823" height="236" alt="Image" src="https://github.com/user-attachments/assets/91f9f9bc-61b1-474d-ab4e-5d2d52740676" />
 
 
 
